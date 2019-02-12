@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>名称自动补全</title>
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/vue/2.4.2/vue.min.js"></script>
+</head>
+<body>
+	<div id="name">
+		 姓名:<input type="text" v-model="name" @keyup="post">
+		 <!--<button @click="post">请求数据</button>-->
+		 <ul>
+		 	<li v-for="item in nameList">{{item}}</li>
+		 </ul>
+	</div>	 
+</body>
+<script>
+	var vm=new Vue({
+		el:'#name',	
+		data:{
+			name:'',	
+			nameList:[],
+		},
+		methods:{
+			post:function(){
+				$.post('AutoComplete.php',{name:this.name},function(result){
+					vm.nameList=result;
+				},'json');
+			}		
+		}
+	});
+</script>
+</html>
+
