@@ -1,6 +1,7 @@
 <?php
 	
-	set_error_handler('dealerror');
+	error_reporting(0);//关闭错误报告
+	set_error_handler('dealerror');//自定义错误处理
 
 
 	function dealerror($type,$message,$file,$line){

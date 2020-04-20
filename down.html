@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="download.php" download="a.jpg">下载</a>
+<a href="" download="a.txt" id="btn">下载</a>
+<button id="xz">xxxxxxxxxxxx</button>
+<button id="xz2">xxxxxxxxxxxx</button>
+</body>
+
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    var blob = new Blob(["Hello,world!\n123123,123123"], {type: "text/txt,charset=UTF-8"});
+    var curl=URL.createObjectURL(blob);
+    $('#btn').attr('href',curl);
+    $('#xz').on('click',function () {
+        console.log(1);
+           $.ajax('download.php',{
+               success:function (data) {
+                   console.log(data)
+                   // return ;
+                   var  url = URL.createObjectURL(new Blob([data.data]),{type:'image/jpg,charset=UTF-8'})
+                   console.log(url)
+                   // $('#btn').attr('href',url);
+                   var link = document.createElement('a');
+                   link.style.display = 'none'
+                   link.href = url
+                   link.setAttribute('download', 'a.jpg')
+                   document.body.appendChild(link)
+                   link.click();
+                   link.remove();
+                },
+           })
+    })
+
+    $('#xz2').on('click',function () {
+        $.post('download.php',function (data) {
+            var blob=base64toblob(data);
+            var url=URL.createObjectURL(blob)
+            var link = document.createElement('a');
+            link.style.display = 'none'
+			var ua = navigator.userAgent.toLowerCase();
+			var isWeixin = ua.indexOf('micromessenger') != -1
+			if(isWeixin) url+="?mp.weixin.qq.com";
+            link.href = url
+			console.log(url);
+            link.setAttribute('download', 'a.jpg')
+            document.body.appendChild(link)
+            link.click();
+            link.remove();
+        })
+    })
+
+
+
+
+    function base64toblob(base64){
+        // var parts = base64.dataURL.split(";base64,");
+        // var contentType = parts[0].split(":")[1];
+        var raw = window.atob(base64);
+        var rawLength = raw.length;
+        var uInt8Array = new Uint8Array(rawLength);
+        for (var i = 0; i < rawLength; i++) {
+            uInt8Array[i] = raw.charCodeAt(i);
+        }
+        return new Blob([uInt8Array], {type: 'jpg'});
+    }
+
+
+</script>
+
+</html>

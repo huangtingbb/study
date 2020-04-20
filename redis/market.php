@@ -4,6 +4,7 @@
 	$goodsList_market=$redis->zrange('market',0,5,true);
 	$goodsList_self=$redis->smembers('inventory:17');
 	$info=$redis->hgetall('user:17');
+	var_dump($info);
 ?>
 
 <h3>商品列表</h3>

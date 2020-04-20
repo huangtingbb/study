@@ -1,2 +1,2 @@
 <?php
-	echo DIRECTORY_SEPARATOR;
+	phpinfo();

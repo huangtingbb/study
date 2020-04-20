@@ -1,0 +1,1000 @@
+    4  tree -fid --noreport ./ >tree
+    5  cat tree
+    6  cd tree2
+    7  mkdir -p `cat ../tree`
+    8  cat ../tree
+    9  vim ../tree
+   10  mkdir -p `cat ../tree`
+   11  ls
+   12  cd ..
+   13  rm -r tree2
+   14  rm -r tree2 y
+   15  rm -r tree2 -y
+   16  rm -rf tree2 
+   17  ls
+   18  ls -lt
+   19  ls -ltc
+   20  ls -lc
+   21  cd /usr/local/blog/
+   22  cd application/index/controller/Index.php 
+   23  cd application/index/controller/
+   24  vim Index.php 
+   25  curl ljblog.stu
+   26  curl ljblog.stu/index/index/shortUrl.php
+   27  curl ljblog.stu/index/index/shortUrl
+   28  vim Index.php 
+   29  curl ljblog.stu/index/index/code62/333
+   30  curl ljblog.stu/index/index/code62
+   31  curl ljblog.stu/index/index/
+   32  cd html/
+   33  ls
+   34  cd html
+   35  mkdir -m 777 mycue
+   36  mv mycue/ myvue
+   37  ls
+   38  npm i vue-cli -g
+   39  vue init webpack-simple myvue
+   40  vue init webpack-simple myvue2
+   41  vue init webpack-simple vue-todos
+   42  ls
+   43  npm i vue-cli -g
+   44  cd /usr/local/nodejs/lib/
+   45  vue -h
+   46  cd ..
+   47  vue -h
+   48  cd ~
+   49  ls
+   50  vue init webpack-simple myvue
+   51  vue-init webpack-simple myvue
+   52  cd -P html
+   53  ls
+   54  pwd
+   55  cd ../..
+   56  ls
+   57  cd ..
+   58  cd blog/
+   59  ls
+   60  vim config/
+   61  ls
+   62  cd config/
+   63  ls
+   64  vim app.php 
+   65  cd ../../
+   66  cd lnmp/nginx/conf/
+   67  ls
+   68  vim nginx.vhost.conf 
+   69  nginx -s reload
+   70  curl ljblog.stu
+   71  cd var/l
+   72  cd /var/logs
+   73  cd /var/
+   74  ls
+   75  cd log
+   76  ls
+   77  cd nginx
+   78  ls
+   79  tailf ljblog.log 
+   80  ls
+   81  tailf ljblog_err.log 
+   82  mysql -uroot -p123456
+   83  cd html
+   84  ls
+   85  mkdir pdo
+   86  cd pdo
+   87  vim query.php
+   88   <?php
+   89    2     $dsn="mysql:dbname=ljstu;host=127.0.0.1";
+   90    3     $user="root";
+   91    4     $pwd="123456";
+   92    5     try{
+   93    6         $db=new PDO($dsn,$user,$pwd);
+   94    7         $sql="select * from test2";
+   95    8         $result=$db->query($sql);
+   96    9         echo "<pre>";
+   97   10         print_r($result);
+   98   11         echo "<br>";
+   99   12         //foreach($result as $row){//如果这样遍历了一次，那么使用pdoStatment::fetchAll()会得到空对象
+  100   13         //  print_r($row);
+  101   14         //  echo "<br>";
+  102   15         //}
+  103   16 
+  104   17         print_r($result->fetchAll());//pdo->query 返回的是一个PDOStatement的对象，查询到的值只能遍历一次
+  105   18         foreach($result as $row2){
+  106   19             print_r($row2);
+  107   20             echo "<br>";
+  108   21         }   
+  109   22     }catch(PDOException $e){
+  110   23         echo $e->getMessage();
+  111  cd /var/ftp/lj
+  112  cat 密码.txt 
+  113  cd /usr/local/blog/
+  114  git add .
+  115  git commit -c''
+  116  git commit -c ''
+  117  git status
+  118  git add .
+  119  git commit -c '111'
+  120  git remote rm origin
+  121  git add origin https://github.com/huangtingbb/ljblog.git
+  122  git add origin  git@github.com:huangtingbb/ljblog.git
+  123  git add origin  git@github.com/huangtingbb/ljblog.git 
+  124  git  remote
+  125  free
+  126  free -g
+  127  free -f
+  128  free -m
+  129  free -h
+  130  git add .
+  131  git commit -m ''
+  132  git commit -m '11'
+  133  git push origin master
+  134  git push  master
+  135  git add remote https://github.com/huangtingbb/ljblog.git
+  136  git remote add origin https://github.com/huangtingbb/ljblog.gi
+  137  git push -u origin master
+  138  git status
+  139  git log
+  140  vim .gitignore 
+  141  cd /usr/local/blog
+  142  vim application/index/controller/Index.php 
+  143  git pull
+  144  vim application/index/controller/Index.php 
+  145  curl lhblog.cn/index/index/shortUrl
+  146  curl lhblog.stu/index/index/shortUrl
+  147  curl ljblog.stu/index/index/shortUrl
+  148  vim application/index/controller/Index.php 
+  149  curl ljblog.stu/index/index/shortUrl
+  150  vim application/index/controller/Index.php 
+  151  curl ljblog.stu/index/index/shortUrl
+  152  vim application/index/controller/Index.php 
+  153  curl ljblog.stu/index/index/shortUrl
+  154  vim application/index/controller/Index.php 
+  155  curl ljblog.stu/index/index/shortUrl
+  156  vim application/index/controller/Index.php 
+  157  curl ljblog.stu/index/index/shortUrl
+  158  vim application/index/controller/Index.php 
+  159  curl ljblog.stu/index/index/shortUrl
+  160  vim application/index/controller/Index.php 
+  161  curl ljblog.stu/index/index/shortUrl
+  162  vim application/index/controller/Index.php 
+  163  curl ljblog.stu/index/index/shortUrl
+  164  vim application/index/controller/Index.php 
+  165  curl ljblog.stu/index/index/shortUrl
+  166  vim application/index/controller/Index.php 
+  167  curl ljblog.stu/index/index/shortUrl
+  168  vim /var/ftp/lj/密码.txt 
+  169  cd ..
+  170  cd /usr/local/blog/
+  171  git pull
+  172  rm application/index/controller/Index.php 
+  173  git pull
+  174  vim .env
+  175  cd ..
+  176  ls
+  177  ls 
+  178  ls -lF
+  179  crontab -l
+  180  alias cp
+  181  alias
+  182  ls
+  183  cd test
+  184  ls
+  185  mkdir d1 
+  186  mv d1  d2/
+  187  ls
+  188  cd /tmp
+  189  ls
+  190  cd ..
+  191  tree -L 1
+  192  mysql -uroot -p
+  193  readlink html
+  194  readlink -f  html
+  195  cd -P html
+  196  pwd
+  197  ll
+  198  cd wxgzh/
+  199  ls -d
+  200  ls
+  201  find ./ -typr d 
+  202  find ./ -type d 
+  203  ls -a
+  204  cd config
+  205  cd .config
+  206  ls
+  207  cd ..
+  208  composer -v
+  209  composer global require laravel/installer
+  210  cd -Phtml
+  211  cd -P html
+  212  cd ..
+  213  laravel new study
+  214  /root/.config/composer/vendor/bin/laravel new study
+  215  cd study/
+  216  ls
+  217  cd public/
+  218  ls
+  219  vim index.php 
+  220  find / -name laravel
+  221  cd /usr/local/lnmp/nginx/conf/
+  222  ls
+  223  cp weiqin.vhost.conf laravel_study.vhost.conf
+  224  vim laravel_study.vhost.conf 
+  225  vim nginx.conf
+  226  nginx -t 
+  227  nginx -s reload
+  228  vim /etc/hosts
+  229  vim laravel_study.vhost.conf 
+  230  nginx -s reload
+  231  curl mylev.stu
+  232  curl mylev.stu/index.php
+  233  ping mylev
+  234  ping mylev.stu
+  235  vim laravel_study.vhost.conf 
+  236  nginx -s reload
+  237  curl mylev.stu 
+  238  curl mylev.stu/index.php
+  239  cd /var/log/nginx/
+  240  ls
+  241  cat laravel_study_error.log 
+  242  curl ljblog.stu
+  243  cat laravel_study_error.log 
+  244  cd -P html
+  245  cd ..
+  246  cd conf
+  247  vim laravel_study.vhost.conf 
+  248  cd ../../study/
+  249  ls
+  250  ls -l
+  251  cd ..
+  252  chmod -R 755 study/
+  253  cd study/
+  254  ls -l
+  255  curl mylev.stu
+  256  curl mylev.stu/index.php
+  257  cd public/
+  258  ls
+  259  vim a.html
+  260  curl mylev.stu/a.html
+  261  cd ../../
+  262  cd ..
+  263  cd blog/
+  264  php -f ./public/index.php 
+  265  cd ..
+  266  ls
+  267  find / -name study
+  268  cd lnmp
+  269  ls
+  270  mv -r study/ ../
+  271  mv  study/ ../
+  272  ls
+  273  cd ..
+  274  ls
+  275  ls -l
+  276  cd lnmp/nginx/conf/
+  277  vim laravel_study.vhost.conf 
+  278  curl mylev.stu
+  279  cd /usr/local/study/
+  280  ls
+  281  ls -l
+  282  chmod -R 766 storage/
+  283  chmod -R 777 storage/
+  284  ls
+  285  ls -al
+  286  vim  .env
+  287  tree -fi ./
+  288  ls
+  289  tree  -L 2 ./
+  290  cat `find ./ -name app.php`
+  291  vim `find ./ -name app.php`
+  292  cd /var/ftp/lj/
+  293  cat 密码.txt 
+  294  mysql  -h172.31.215.57 -uxiaoyu -p
+  295  mysql  -h172.31.215.57 -uxiaoyu -pxf3qZgds2D1
+  296  mysql  -h172.31.215.57 -uxiaoyu -p
+  297  ping 172.31.215.57
+  298  ls
+  299  cd linuxCmd/
+  300  ls
+  301  lsattr a.txt
+  302  cat a.txt
+  303  echo 111>>a.txt
+  304  echo  111>a.txt
+  305  ls
+  306  cd html
+  307  ls
+  308  cd mysql
+  309  ls
+  310  vim ActiveRecord.php
+  311  service vsftpd status
+  312  ls
+  313  cd /etc/init.d/
+  314  ls
+  315  service vsftpd stau
+  316  service vsftpd 
+  317  service vsftpd status
+  318  ls -l
+  319  ls -lF
+  320  cd /usr/local/
+  321  ls
+  322  cd lnmp
+  323  ls
+  324  cd ..
+  325  mkdir -m777 phpframework
+  326  mv blog/ study/ phpframework/
+  327  ls
+  328  cd lnmp/nginx/
+  329  cd conf/
+  330  ls
+  331  vim laravel_study.vhost.conf 
+  332  ls
+  333  vim nginx.vhost.conf 
+  334  nginx -s reload
+  335  cd ../../../phpframework/
+  336  ls
+  337  cd blog
+  338  git status
+  339  cd ../
+  340  cd study/
+  341  ls
+  342  cd config/
+  343  ls
+  344  cd ..
+  345  ls
+  346  cat .env
+  347  less .env
+  348  cat config/app.php |grep env
+  349  cat config/app.php |grep env$
+  350  cat config/app.php |grep env
+  351  less config/app.php 
+  352  tree -L 2
+  353  tree -L 1
+  354  cd public 
+  355  ls
+  356  cat index.php 
+  357  cd /usr/local/phpframework/
+  358  cd study/
+  359  ls
+  360  cd app
+  361  ls
+  362  cd Http/
+  363  ls
+  364  cd ..
+  365  cls
+  366  ls
+  367  cd Console/
+  368  ls
+  369  cd ../Http/
+  370  LS
+  371  ls
+  372  cd con
+  373  cd Controllers/
+  374  ls
+  375  ls -lF
+  376  vim Controller.php 
+  377  vim ../../../resources/views/welcome.blade.php 
+  378  ls
+  379  cd Auth/
+  380  ls
+  381  cd ../../..
+  382  cd ..
+  383  php artisan make:controller UserController 
+  384  cd routes/
+  385  vim web.php 
+  386  php artisan make:model User
+  387  cd ..
+  388  php artisan make:model User
+  389  cd -
+  390  find ../User*
+  391  find ../ -name User*
+  392  find ../ -name User
+  393  find ../ -name User.php
+  394  php artisan make:model Users
+  395  cd ..
+  396  php artisan make:model Users
+  397  find ../ -name Users.php
+  398  cd app
+  399  ls
+  400  vim users.php
+  401  ls
+  402  vim Users.php
+  403  ls
+  404  rm users.php 
+  405  cd ..
+  406  tree -L 1
+  407  cd app
+  408  ls
+  409  cd Http/
+  410  ls
+  411  cd ..
+  412  ls
+  413  mkdir models
+  414  mv models Models
+  415  ls
+  416  php artisan make:model Models\User
+  417  cd ..
+  418  php artisan make:model Models\User
+  419  cd app
+  420  ls
+  421  cd Models
+  422  ls
+  423  cd ..
+  424  php artisan make:model Models/User
+  425  cd app
+  426  ls
+  427  cd Models
+  428  ls
+  429  cd ..
+  430  rm ModelsUser.php 
+  431  rm Users.php 
+  432  ls
+  433  cd Console/
+  434  cd ../Http/
+  435  cd Controllers/
+  436  ls
+  437  vim UserController.php 
+  438  cd ..
+  439  ls
+  440  cd ..
+  441  ls
+  442  mv Models/ Http/
+  443  LS
+  444  ls
+  445  cd Http/
+  446  cd M
+  447  ls
+  448  cd Models/
+  449  ls
+  450  vim User.php 
+  451  cd ..
+  452  cd Controllers/
+  453  vim UserController.php 
+  454  vim ../Models/User.php 
+  455  cd ../..
+  456  cd ..
+  457  cd resources/views/
+  458  ls
+  459  mkdir /user
+  460  cd user
+  461  vim user.blade.php
+  462  ls
+  463  mkdir user
+  464  ls
+  465  mv user.blade.php  user/
+  466  cd user/
+  467  mv user.blade.php  index.blade.php
+  468  vim index.blade.php 
+  469  cd /usr/local/phpframework/study/routes/
+  470  vim web.php 
+  471  ls
+  472  cd ..
+  473  cd app/Http/Controllers/
+  474  ls
+  475  vim UserController.php 
+  476  cd ..
+  477  ls
+  478  cd ..
+  479  ls
+  480  vim User.php 
+  481  cat ../.env
+  482  cd Models
+  483  ls
+  484  cd Http/Models/User.php 
+  485  vim Http/Models/User.php 
+  486  vim ../config/.env
+  487  ls -al ../config/ 
+  488  cd ..
+  489  cd -
+  490  vim ../.env
+  491  vim ../config/app.php 
+  492  vim ../routes/web.php 
+  493  vim Http/Controllers/UserController.php 
+  494  vim ../routes/web.php 
+  495  mysql -uroot -p123456
+  496  cd /usr/local/phpframework/study/
+  497  ls
+  498  vim app/Http/Controllers/UserController.php 
+  499  vim ./routes/web.php 
+  500  vim app/Http/Controllers/UserController.php 
+  501  cd /usr/local/phpframework/study/
+  502  cat .env
+  503  cd /usr/local/phpframework/study/
+  504  ls
+  505  vim app/Http/Models/User.php 
+  506  vim config/app.php 
+  507  find ./ -name *Contr*
+  508  php artisan make:controller test
+  509  vim ./app/Http/Controllers/
+  510  vim ./app/Http/Controllers/test.php 
+  511  mv ./app/Http/Controllers/{test.php,TestController}
+  512  mv ./app/Http/Controllers/TestController{,.php}
+  513  vim ./app/Http/Controllers/TestController.php 
+  514  vim ./routes/web.php 
+  515  vim ./app/Http/Controllers/TestController.php 
+  516  git init
+  517  touch readme.md
+  518  echo laravel学习 >readme.md 
+  519  git add .
+  520  git remote add lnmp https://github.com/huangtingbb/mylev.git
+  521  git push -u lnmp master
+  522  mv readme.md README.md
+  523  git push -u lnmp master
+  524  ls
+  525  ls -al
+  526  cat README.md 
+  527  git commit -m '初始化仓库'
+  528  git push -u lnmp master
+  529  cat .env
+  530  tree -L 1
+  531  zip vender v.zip
+  532  ls
+  533  zip -r  vender v.zip
+  534  zip -r v.zip vendor/
+  535  ls -al
+  536  ls -alh
+  537  mv v.zip /var/ftp/lj/
+  538  ls
+  539  cat .gitignore 
+  540  cat .env
+  541  ls -l
+  542  ls -l --time=atime
+  543  cd app
+  544  cd -
+  545  ls -l --time=atime
+  546  ls -l --time=atime --time-style=long-iso
+  547  ls -l --time=mtime --time-style=long-iso
+  548  ls -l  --time-style=long-iso
+  549  tree -L 1 -F
+  550  tree -f
+  551  tree -f -L1
+  552  tree -L 1 -F
+  553  tree -L 1 -f
+  554  tree -L 1 -fi
+  555  tree -L 1 -fid
+  556  ls -d
+  557  ls -ld
+  558  ls -F | grep \
+  559  ls -F | grep /
+  560  l.
+  561  l. -l
+  562  alias |grep ls
+  563  ll
+  564  \ls
+  565  ls
+  566  ls -l |tail 1
+  567  ls -l |tail -1
+  568  ll
+  569  ll -rt
+  570  ll -rti
+  571  ll -st
+  572  php artisan
+  573  redis-cli
+  574  service redis
+  575  service redis stop
+  576  cd /var/redis/
+  577  ls
+  578  tailf 6379
+  579  tail -n 10 6379c
+  580  cd 6379/
+  581  ls
+  582  cat dump.rdb |tail -n 10
+  583  cd ..
+  584  ls
+  585  cd log
+  586  ls
+  587  cd html
+  588  ls
+  589  vim changeVar.php 
+  590  ls
+  591  cd str
+  592  ls
+  593  vim changestr.php 
+  594  free
+  595  ls
+  596  cd html
+  597  ls
+  598  cd myvue/
+  599  ls
+  600  cd ..
+  601  cd redis 
+  602  ls
+  603  service redis start
+  604  cd html/mysql
+  605  ls
+  606  cd ..
+  607  ls
+  608  ls |grep 'pdo'
+  609  ls -l |grep 'pdo'
+  610  cd pdo
+  611  ls
+  612  vim query.php 
+  613  cp /var/ftp/lj/auto_xj.php ./
+  614  ls
+  615  php -f auto_xj.php 
+  616  ls
+  617  cat auto.log
+  618  crontab e
+  619  crontab -e
+  620   php -f /usr/local/lnmp/nginx/html/pdo/auto_xj.php
+  621  cat auto.log 
+  622  pwd -L
+  623  pwd -P
+  624  lsc
+  625   php -f /usr/local/lnmp/nginx/html/pdo/auto_xj.php
+  626  cat auto.log 
+  627  vim auto_xj.php 
+  628  rm auto.log 
+  629   php -f /usr/local/lnmp/nginx/html/pdo/auto_xj.php
+  630  cat auto.log 
+  631  tail -f /var/log/cron.log
+  632  cd /var/log
+  633  ls
+  634  cat cron
+  635  tailf cron
+  636  cd /root/html/pdo/
+  637  cat auto.log 
+  638  cd /usr/local/lnmp/php/
+  639  ls
+  640  cd sbin
+  641  ls
+  642  cd ../bin
+  643  ls
+  644  php 
+  645  php -v
+  646  tail -10 /etc/profile
+  647  crontab -e
+  648  tailf /var/log/cron
+  649  cd /root/html/pdo/
+  650  cat auto.log 
+  651  find / -name auto.log
+  652  cat /root/auto.log
+  653  :q
+  654  crontab -r 
+  655  vim auto_xj.php 
+  656  cat /etc/cron.allow
+  657  cd /etc
+  658  ls |grep 'cron'
+  659  cta cron.d
+  660  cat cron.d
+  661  cd cron.d
+  662  ls
+  663  cd ..
+  664  ls -F |grep 'cron'
+  665  ls -al 
+  666  ntsysv
+  667  locate php.ini
+  668  yum 
+  669  yum list locate
+  670  cd /var/lib
+  671  cd ./slocate
+  672  ls
+  673  ls \al
+  674  ls -al
+  675  ls -lst
+  676  whereis php.ini
+  677  whereis mysqld
+  678  whereis a.php
+  679  whereis rsyslog/
+  680  cd /
+  681  whereis home
+  682  whereis cron
+  683  whereis /home
+  684  cd htome
+  685  cd homt
+  686  cd home
+  687  whereis home
+  688  where home
+  689  whereis home
+  690  whereis php
+  691  whereis -b cron
+  692  whereis -m cron
+  693  whereis a.php
+  694  whereis crontab
+  695  whereis -b crontab
+  696  cd /usr/bin/crontab 
+  697  cd /usr/bin/
+  698  ls -al crontab
+  699  ls -alF crontab
+  700  whereis ls
+  701  cat usr/bin/ls
+  702  cat /usr/bin/ls
+  703  ls l
+  704  ls -l
+  705  pwd
+  706  whereis -m ls
+  707  whereis -m ls |cat 
+  708  cat {whereis -m ls}
+  709  whereis ls
+  710  whereis -s ls
+  711  which ls
+  712  which php
+  713  whereis which
+  714  alias which
+  715  which ls
+  716  whereis ls
+  717  whereis -s ls
+  718  whereis -m ls
+  719  yum install mlabel 
+  720  locate php
+  721  laravel -v
+  722  cd linuxCmd/
+  723  ls
+  724  mkdir movet
+  725  cd movet/
+  726  touch file1.txt file2.txt file3.txt
+  727  mkdir ../movet2
+  728  cp ./file* ../movet2/
+  729  mv file1.txt ../movet2/
+  730  mv -n file2.txt ../movet2/
+  731  ls
+  732  cd linuxCmd/
+  733  cd movet
+  734  mv file2.txt ../file2
+  735  ls ../
+  736  cd linuxCmd/
+  737  ls 
+  738  cd movet2
+  739  rm -i ./*
+  740  rm ..
+  741  rm -r ..
+  742  cd ..
+  743  cd -
+  744  rm .
+  745  rm -r .
+  746  rm ../movet
+  747  rm -r ../movet2
+  748  ls
+  749  cd ..
+  750  ls
+  751  cp -r movet movet2
+  752  ls
+  753  cd movet2
+  754  ls
+  755  rm -r ../movet2
+  756  ls
+  757  ls lh
+  758  ls -lh
+  759  ls -lhd
+  760  touch 1.txt
+  761  touch ./a.txt
+  762  ls ../
+  763  cd ..
+  764  mkdir -p movet2/movet3/movet4
+  765  tree movet2
+  766  rmdir movet2
+  767  rmdir -pv movet2
+  768  rmdir -p -v movet2
+  769  rmdir -p -v movet2/movet3/movet4/
+  770  redis-cli
+  771  cd html
+  772  ls
+  773  ls -i . 
+  774  ls -id .
+  775  ls -id . ../html
+  776  cd html/wxgzh/
+  777  ls
+  778  vim Config.php 
+  779  tailf /usr/local/lnmp/nginx/logs/error.log 
+  780  tailf /usr/local/lnmp/nginx/logs/
+  781  cd /usr/local/lnmp/nginx/logs
+  782  ls
+  783  tailf host.access.log 
+  784  cd /etc
+  785  ls -al
+  786  cd ../
+  787  cd `
+  788  ;
+  789  cd ~
+  790  cd ~
+  791  cd html
+  792  cd link.php 
+  793  cd ../linuxCmd 
+  794  ls
+  795  ln a.php ahardlink.php
+  796  ls
+  797  ls -al
+  798  ls -alih
+  799  ln -s a.php c.php
+  800  rm a.php
+  801  ls -al
+  802  cat c.php
+  803  ls
+  804  rm c.php
+  805  cat ahardlink.php 
+  806  find -P
+  807  cd linuxCmd/
+  808  ls
+  809  cat a.txt
+  810  ln -s a.txt aaa.txt
+  811  cat aaa.txt 
+  812  readlink aaa.txt 
+  813  ls -l
+  814  ls -al
+  815  touch -at 201904160930 aaa.txt
+  816  touch -at 201904160930 a.txt
+  817  touch -at 201904160930 ./a.txt 
+  818  touch -a ./a.txt 
+  819  touch -a a.txt 
+  820  touch -abc.xt
+  821  touch -a bc.xt
+  822  rm bc.xt 
+  823  /rm bc.xt
+  824  \rm bc.xt
+  825  lsattr a.txt
+  826  echo ahardlink.php 
+  827  cat ahardlink.php 
+  828  ls -ali
+  829  touch test.txt
+  830  echo '11111111'>test.txt 
+  831  touch -at 201904160930 test.txt 
+  832  ls -l test.txt 
+  833  touch -at 201904160930.30 test.txt 
+  834  stat test.txt 
+  835  touch -mt 201904160930.30 test.txt 
+  836  stat test.txt 
+  837  lsattr a.txt 
+  838  find ./ -atime -2 
+  839  find ./ -atime 
+  840  find ./ -atime +2
+  841  find ./ -mtime -2
+  842  find ./ -atime -2
+  843  vim ahardlink.php 
+  844  find ./ -atime -2
+  845  find ./ -mtime -2
+  846  find ./ -type d
+  847  find ./ ! -type d
+  848  find ./ -size +1c
+  849  find ./ -size -1c
+  850  cat file2
+  851  find ./ -size 1c
+  852  find ./ -type d
+  853  find ./ -type d -path './movet/' -prune 
+  854  find ./ -type d -path './movet' -prune 
+  855  find ./ -type d -path './movet2' -prune 
+  856  find ./ -type d -path './movet2' -prune-o-print
+  857  find ./ -type d -path './movet2' -prune -o -print
+  858  find ./ -type d -path './movet2' -prune -a -print
+  859  find ./ -type d -path './movet2' -prune -! -print
+  860  find ./ -type d -path './movet2' -prune ! -print
+  861  find ./ -type d -path './movet2' -prune -o -print
+  862  find ./ -type f -exec ls -lst {} \;|grep *.txt
+  863  find ./ -type f -exec ls -lst {} find ./ -type f -exec ls -lst {} \;
+  864  find ./ -type f -exec ls -lst {} find ./ -type f -exec ls -l {} \;
+  865  find ./ -type f -exec ls -lst {} find ./ -type f -exec ls {} \;
+  866  find . -name ‘*.log’ -exec ls -l {} \;
+  867  find ./ -type f 
+  868  find ./ -type f -name '*.txt'
+  869  find ./ -type f -name '*.txt' -exec ls -l {}\
+  870  find ./ -type f -name '*.txt' -exec ls -l {} \
+  871  find ./ -type f -name '*.txt' -exec ls -l {} /
+  872  find ./ -type f -name '*.txt' -exec ls -l {} \;
+  873  find ./ -type f -name '*.txt' -exec ls -l {} \;|grep a*
+  874  find ./ -type f -name '*.txt' -exec ls -l {} \;|grep a
+  875  find ./ -type f  -exec ls -l {} \;|grep a
+  876  find ./ -type f | ls -l
+  877  find ./ -type f |xargs ls -l
+  878  find ./ -type f |xargs ls -l --color-style=auto
+  879  find ./ -type f |xargs ls -l -color-style=auto
+  880  alias ls 
+  881  find ./ -type f |xargs ls -l --color=auto
+  882  cd html
+  883  ls
+  884  phpcs -sw --standard=PSR4 count.php 
+  885  /usr/local/lnmp/php/bin/phpcs -sw --standard=PSR4 count.php 
+  886  find / -name phpcs
+  887  cd html
+  888  ls
+  889  mkdir -m 766 front
+  890  vim seman.html
+  891  pwd
+  892  mv seman.html ./front/
+  893  cd ./front/
+  894  pwd
+  895  pwd -L
+  896  pwd -P
+  897  ls
+  898  cd ..
+  899  cat index.html 
+  900  tail -n 10 /usr/local/lnmp/nginx/logs/error.log 
+  901  ls -l
+  902  ls -lst |head -n 1
+  903  ls -lst |head -n 2
+  904  cd front
+  905  ls
+  906  ls -l
+  907  cd..
+  908  cd ..
+  909  chmod -R 766 ./front/
+  910  cd ..
+  911  cd -
+  912  cd front/
+  913  ls
+  914  ls -l
+  915  tail -n 10 /usr/local/lnmp/nginx/logs/error.log 
+  916  chmod -R 755 ../front/
+  917  vim seman.html 
+  918  ls
+  919  cat auto.log 
+  920  useradd ht
+  921  passwd ht 
+  922  cat /etc/passwd
+  923  cd  /var/ftp/
+  924  ls
+  925  ls -l
+  926  mkdir ht
+  927  chown ht ht
+  928  ls -l
+  929  chmo -R 744 ht
+  930  chmod -R 744 ht
+  931  ls -l
+  932  vim /etc/vsftpd/
+  933  cd /etc/vsftpd/
+  934  ls
+  935  vim vsftpd.conf 
+  936  ls
+  937  vim chroot_list 
+  938  cat /var/ftp/lj
+  939  cat /var/ftp/lj/密码.txt 
+  940  vsftpd status
+  941  systemctl restart vsftpd
+  942  ls
+  943  cat user_list
+  944  vsftpd
+  945  vsftpd statu
+  946  service vsftpd stop
+  947  service vsftpd start
+  948  vim /etc/vsftpd/vsftpd.conf 
+  949  service vsftpd start
+  950  systemctl status vsftpd.service
+  951  vsftpd -t 
+  952  systemctl start vsftpd.service
+  953  vim /etc/vsftpd/vsftpd.conf 
+  954  lsof -i:21
+  955  kill 8537
+  956  lsof -i:21
+  957  vim /etc/vsftpd/vsftpd.conf 
+  958  cd /va
+  959  cd /var
+  960  ls
+  961  ls -l |grep vsftpd
+  962  find ./ -name vsftpd
+  963  find ./ -name vsftpd*
+  964  find ./ -name 'vsftpd*'
+  965  ls
+  966  cd log
+  967  ls
+  968  cd ..
+  969  cd ./ -name '*ftp*'
+  970  ls -l
+  971  cd log
+  972  ls -l
+  973  ls -lst
+  974  cd ..
+  975  ls -lst
+  976  cd ftp
+  977  ls
+  978  cd ..
+  979  cd log
+  980  ls
+  981  tail -n xferlog
+  982  tail -n 10 xferlog
+  983  tail -n 20 xferlog
+  984  systemctl start vsftpd
+  985  systemctl start stat
+  986  systemctl start statu
+  987  systemctl start status
+  988  systemctl statu vsftpd
+  989  systemctl status vsftpd
+  990  losf -i:22
+  991  lsof -i:22
+  992  lsof -i:21
+  993  usermod ht -s /sbin/nologin
+  994  cat /etc/passwd
+  995  vim /etc/passwd
+  996  su ht
+  997  su lj
+  998  cd html
+  999  ls
+ 1000  vim a.txt
+ 1001  ls
+ 1002  history 
+ 1003  history > a.html
