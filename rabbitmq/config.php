@@ -5,7 +5,7 @@
 
 return [
     'rabbit' => [
-        'host' => '192.168.29.130',
+        'host' => '192.168.29.139',
         'vhost' => '/',
         'port' => '5672',
         'login' => 'admin',

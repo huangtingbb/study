@@ -37,8 +37,11 @@ $queue->declareQueue();
 //绑定交换机
 $queue->bind($exchange->getName(),$config['test_routing_key']);
 //消费消息
-$queue->consume(function ($envelope, $q) {
-    echo $envelope->getBody() . "\n";
-    $envelope->isRedelivery();
-    $q->ack($envelope->getDeliveryTag());
-});
+while(true) {
+    while ($msgEnvelope = $queue->get(AMQP_NOPARAM)) {
+        $msg = $msgEnvelope->getBody();
+        $queue->nack($msgEnvelope->getDeliveryTag());
+        echo $msg . PHP_EOL;
+    }
+}
+$conn->disconnect();
