@@ -75,7 +75,10 @@ class Snowflake
 
 $id = new Snowflake(1,1);
 $id2 = new Snowflake(2,1);
+$id3= new Snowflake(2,2);
 while(true) {
-    echo "id :",decbin($id->nextId()),"\n";
-    echo "id2:",decbin($id2->nextId()),"\n";
+    //decbin(5);将数字转成字节字符串
+    echo "id :",($id->nextId()),"\n";
+    echo "id2:",($id2->nextId()),"\n";
+//    echo "id3:",($id3->nextId()),"\n";
 }
